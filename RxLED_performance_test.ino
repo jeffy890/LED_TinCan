@@ -21,7 +21,7 @@ void setup() {
   for (i = 0; i < 512; i++) {
     digitalWrite(3, m[i]);
     delay(10);
-    Rx_data[i] = analogRead(0);
+    Rx_data[i] = analogRead(A0);
   }
   digitalWrite(2, HIGH);
   
